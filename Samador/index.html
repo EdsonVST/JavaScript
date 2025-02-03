@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+        div#area {
+        background-color: blue;
+        text-align: center;
+        width: 100px;
+        line-height: 100px;
+        height: 100px;
+        
+    }
+    </style>
+</head>
+<body>
+    <H1>ola mundo</H1>
+    <div id="area">
+        clique aqui
+    </div>
+    
+</body>
+<script>
+   var a = window.document.getElementById('area')
+
+   a.addEventListener('click', clicar)
+   a.addEventListener('mouseenter', entrar)
+   a.addEventListener('mouseout', sair)
+
+         
+    function clicar() {
+        a.innerText = 'clicou!'
+        a.style.backgroundColor = 'red'
+    }
+
+    function entrar(){
+        a.innerText = 'entrou!'
+        a.style.background = 'blue'
+          a.style.color = 'black'
+    }
+    function sair(){
+        a.innerText = 'saiu!'
+        a.style.background = 'black'      
+        a.style.color = '#ffffff'
+    }
+
+</script>
+</html>
